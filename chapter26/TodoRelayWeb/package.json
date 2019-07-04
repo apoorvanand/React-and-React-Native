@@ -2,7 +2,9 @@
   "private": true,
   "scripts": {
     "start": "babel-node ./server.js",
-    "update-schema": "babel-node ./scripts/updateSchema.js"
+    "update-schema": "babel-node ./scripts/updateSchema.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-cli": "^6.22.2",
@@ -31,9 +33,11 @@
     "todomvc-app-css": "2.0.6",
     "todomvc-common": "1.0.2",
     "webpack": "1.13.2",
-    "webpack-dev-server": "^1.16.1"
+    "webpack-dev-server": "^1.16.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4"
-  }
+  },
+  "snyk": true
 }
