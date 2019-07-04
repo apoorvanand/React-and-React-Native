@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "update-schema": "babel-node ./scripts/updateSchema.js",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-relay-plugin": "^0.9.3",
@@ -13,7 +15,8 @@
     "react": "15.4.1",
     "react-native": "0.38.0",
     "react-relay": "^0.9.3",
-    "relay": "^0.8.0-1"
+    "relay": "^0.8.0-1",
+    "snyk": "^1.189.0"
   },
   "jest": {
     "preset": "react-native"
@@ -27,5 +30,6 @@
     "babel-preset-stage-2": "^6.18.0",
     "jest": "17.0.3",
     "react-test-renderer": "15.4.1"
-  }
+  },
+  "snyk": true
 }
