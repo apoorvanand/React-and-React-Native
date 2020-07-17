@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
-    "eslint": "^3.5.0",
+    "eslint": "^4.0.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "immutable": "^3.8.1",
     "react": "^15.4.2",
