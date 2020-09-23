@@ -9,7 +9,7 @@
     "babel-preset-react-native-stage-0": "^1.0.1",
     "fetch-mock": "^5.0.5",
     "querystring": "^0.2.0",
-    "react": "^15.4.2",
+    "react": "^16.5.0",
     "react-native": "^0.40.0"
   }
 }
